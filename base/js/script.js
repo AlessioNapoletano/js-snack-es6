@@ -101,6 +101,31 @@ const persone =
             surname: "Cantalicio",
             age: 16
         },
+        {
+            name: "Renato",
+            surname: "Zenga",
+            age: 30
+        },
+        {
+            name: "Tiziano",
+            surname: "Ferro",
+            age: 87
+        },
+        {
+            name: "Maggio",
+            surname: "Capatonda",
+            age: 12
+        },
+        {
+            name: "Sandro",
+            surname: "Tonali",
+            age: 19
+        },
+        {
+            name: "Uku",
+            surname: "Efratere",
+            age: 21
+        },
     ];
 
 const maggiorenni = persone.filter((persona) => {
@@ -113,4 +138,14 @@ const maggiorenni = persone.filter((persona) => {
 
 console.log(maggiorenni);
 
-maggiorenni.forEach((maggiorenne) => console.log(`Nome: ${maggiorenne.name} Cognome: ${maggiorenne.surname} può guidare in Italia`));
+maggiorenni.forEach((maggiorenne) => {
+    console.log(`Nome: ${maggiorenne.name} Cognome: ${maggiorenne.surname} può guidare in Italia in quanto ha ${maggiorenne.age} anni`)
+});
+
+const minorenni = persone.filter((persona) => persona.age<18);
+
+minorenni.forEach((minorenne) => {
+    console.log(`La guida non è resa possibile ai minorenni ${minorenne.name}`)
+});
+
+
