@@ -47,7 +47,11 @@ const animals =
     {
         name: "alessio",
         family: "umano",
-        classe: "mammiefero"
-    },
+        classe: "mammiferi"
+    }
 
-]
+];
+
+const mammiferi = animals.filter((animal) => animal.classe ==="mammiferi");
+
+console.log(mammiferi);
